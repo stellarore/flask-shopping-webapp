@@ -56,5 +56,13 @@ def addItem():
     print("Added: {},{},{}".format(item_name, number, department))
     return redirect('/')
 
+@app.route('/addOne', methods=['POST'])
+def addOne():
+    item_name = request.form['item_name']
+    item_number = str(int(request.form['item_number']) + 1)
+    g.db.execute("UPDATE groceries SET number={} WHERE item='{}'".format(item_number, item_name))
+    g.db.commit()
+    return redirect('/')
+
 if __name__ == '__main__':
     app.run()
