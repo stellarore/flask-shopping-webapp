@@ -18,8 +18,7 @@ def teardown_request(exception):
 
 @app.route('/')
 def index():
-    grocery_list = g.db.execute("SELECT * FROM groceries").fetchall()
-    print(grocery_list)
+    grocery_list = g.db.execute("SELECT * FROM groceries ORDER BY department ASC").fetchall()
     to_buy = []
     bought = []
     for i in grocery_list:
@@ -35,6 +34,12 @@ def index():
 @app.route('/add')
 def add():
     return render_template('add.html')
+
+@app.route('/checkoffItem')
+def checkoff():
+
+    g.db.execute("UPDATE groceries SET quantity=0")
+    return redirect('/')
 
 
 @app.route('/addItem', methods = ['POST'])
