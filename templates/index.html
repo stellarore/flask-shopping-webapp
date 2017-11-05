@@ -5,11 +5,36 @@
   </head>
 
   <body>
-  <ul>
-  {% for grocery in grocery_list %}
-  <li>{{ grocery[0] }}, {{ grocery[1] }}, {{ grocery[2] }}</li>
-  {% endfor %}
-</ul>
+  <table>
+    <tr>
+      <td>Item</td>
+      <td>Quantity</td>
+      <td>Department</td>
+    </tr>
+    {% for grocery in grocery_list %}
+    <tr>
+      <td>{{ grocery[0] }}</td>
+      <td>{{ grocery[1] }}</td>
+      <td>{{ grocery[2] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
     <h2><a href="/add">Add an item</a></h2>
+
+    <table>
+    <tr>
+      <td>Item</td>
+      <td>Quantity</td>
+      <td>Department</td>
+    </tr>
+    {% for grocery in bought_list %}
+    <tr>
+      <td>{{ grocery[0] }}</td>
+      <td>{{ grocery[1] }}</td>
+      <td>{{ grocery[2] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
   </body>
 </html>

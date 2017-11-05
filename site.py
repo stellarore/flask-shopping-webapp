@@ -4,23 +4,38 @@ from flask import g
 import sqlite3
 app = Flask(__name__)
 
+
 @app.before_request
 def before_request():
     g.db = sqlite3.connect("grocerylist.db")
+
 
 @app.teardown_request
 def teardown_request(exception):
     if hasattr(g, 'db'):
         g.db.close()
 
+
 @app.route('/')
 def index():
     grocery_list = g.db.execute("SELECT * FROM groceries").fetchall()
-    return render_template('index.html', grocery_list=grocery_list)
+    print(grocery_list)
+    to_buy = []
+    bought = []
+    for i in grocery_list:
+        if i[1] > 0: to_buy.append(i)
+        else: bought.append(i)
+    # where number > 0
+    # separate list where number = 0
+    # clickable to check off
+    # separate button to save checkoffs
+    return render_template('index.html', grocery_list=to_buy, bought_list=bought)
+
 
 @app.route('/add')
 def add():
     return render_template('add.html')
+
 
 @app.route('/addItem', methods = ['POST'])
 def addItem():
