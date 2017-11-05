@@ -15,7 +15,6 @@ def teardown_request(exception):
     if hasattr(g, 'db'):
         g.db.close()
 
-
 @app.route('/')
 def index():
     grocery_list = g.db.execute("SELECT * FROM groceries ORDER BY department ASC").fetchall()
@@ -30,15 +29,18 @@ def index():
     # separate button to save checkoffs
     return render_template('index.html', grocery_list=to_buy, bought_list=bought)
 
-
-@app.route('/add')
-def add():
-    return render_template('add.html')
-
-@app.route('/checkoffItem')
+@app.route('/checkoffItem', methods=['POST'])
 def checkoff():
+    item_name = request.form['item_name']
+    g.db.execute("UPDATE groceries SET number=0 WHERE item='{}'".format(item_name))
+    g.db.commit()
+    return redirect('/')
 
-    g.db.execute("UPDATE groceries SET quantity=0")
+@app.route('/checkonItem', methods=['POST'])
+def checkon():
+    item_name = request.form['item_name']
+    g.db.execute("UPDATE groceries SET number=1 WHERE item='{}'".format(item_name))
+    g.db.commit()
     return redirect('/')
 
 

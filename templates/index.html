@@ -16,11 +16,43 @@
       <td>{{ grocery[0] }}</td>
       <td>{{ grocery[1] }}</td>
       <td>{{ grocery[2] }}</td>
+      <td>
+        <form action="/checkoffItem" method="post">
+          <input type="hidden" name="item_name" value="{{ grocery[0] }}">
+          <button type="submit">Check off</button>
+        </form>
+      </td>
     </tr>
     {% endfor %}
   </table>
 
-    <h2><a href="/add">Add an item</a></h2>
+   <table>
+    <tr>
+        <td>Item</td>
+        <td>Number</td>
+        <td>Department</td>
+    </tr>
+    <tr>
+    <form action="/addItem" method="post">
+    <td><type="text" name="item_name"></td>
+    <td><input type="text" name="item_number" size="1"></td>
+
+    <td><select name="department">
+      <option value="1-Produce">Produce</option>
+      <option value="2-Bakery">Bakery</option>
+      <option value="3-Meat">Meat</option>
+      <option value="4-Soda">Soda</option>
+      <option value="5-Snacks">Snacks</option>
+      <option value="6-DryGoods">DryGoods</option>
+      <option value="7-Misc">Misc</option>
+      <option value="8-Frozen">Frozen</option>
+      <option value="9-Dairy">Dairy</option>
+
+    </select></td>
+    </tr>
+    <tr><td><input type="submit" value="Add Item"></td></tr>
+    </form>
+   </table>
 
     <table>
     <tr>
@@ -33,6 +65,12 @@
       <td>{{ grocery[0] }}</td>
       <td>{{ grocery[1] }}</td>
       <td>{{ grocery[2] }}</td>
+      <td>
+        <form action="/checkonItem" method="post">
+          <input type="hidden" name="item_name" value="{{ grocery[0] }}">
+          <button type="submit">Add to List</button>
+        </form>
+      </td>
     </tr>
     {% endfor %}
   </table>
