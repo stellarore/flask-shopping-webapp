@@ -1,0 +1,286 @@
+# this is a comment line
+# departments:
+# produce = 1-Produce
+# bakery = 2-Bakery
+# meat = 3-Meat
+# soda = 4-Soda
+# snacks = 5-Snacks
+# dry = 6-DryGoods
+# misc = 7-Misc
+# froz = 8-Frozen
+# dairy = 9-Dairy
+#
+apples,produce
+bananas,produce
+apples,produce
+arugula,produce
+aspag,produce
+avocado,produce
+b sprouts,produce
+bananas,produce
+basil,produce
+bean sprouts,produce
+broccoli,produce
+cabbage,produce
+carrots,produce
+celery,produce
+chinese veg,produce
+cilantro,produce
+corn cob,produce
+cucumber,produce
+garlic,produce
+ginger,produce
+Ginger,produce
+Grapefruit,produce
+grapes,produce
+green onions,produce
+Jalapeño,produce
+kale,produce
+large orange,produce
+lemons,produce
+limes,produce
+mushrooms,produce
+Orange,produce
+parsley,produce
+peppers,produce
+potatoes red,produce
+red onions,produce
+red peppers,produce
+rosemary,produce
+russets,produce
+salad,produce
+shallots,produce
+spinach,produce
+strawberries,produce
+sweet potatoes,produce
+thyme,produce
+tofu,produce
+tofurkey dogs,produce
+tomatoes,produce
+white potatoes,produce
+yellow onions,produce
+zucchini,produce
+1lb mozz,dairy
+2% milk,dairy
+almond milk,dairy
+american cheese 8 oz,dairy
+baby bell cheese,dairy
+bacon,dairy
+biscuits,dairy
+Brie,dairy
+butter,dairy
+cheddar,dairy
+Chipotle chicken meat,dairy
+chobani vanilla yogurt,dairy
+cookie dough,dairy
+cream,dairy
+cream cheese 8oz,dairy
+dessert,dairy
+Eggs,dairy
+feta,dairy
+Feta,dairy
+Greek!!! Dannon light and fit straw yogurt,dairy
+Greek yog,dairy
+heavy cream,dairy
+helluva good french onion dip,dairy
+ital cheese,dairy
+lunchmeat turkey,dairy
+mexican cheese,dairy
+milk,dairy
+mozzarella,dairy
+oven turkey meat,dairy
+parm cheese,dairy
+pb cookie dough,dairy
+pepper jack,dairy
+pepperoni,dairy
+pizza cheese,dairy
+sharp cheddar 8 oz,dairy
+slice cheese,dairy
+soy milk very vanilla,dairy
+Van yog,dairy
+yogurt,dairy
+club crackers,snacks
+feta cheese,snacks
+goat cheese,snacks
+graham crakers,snacks
+havari cheese,snacks
+hershey bars,snacks
+hummus,snacks
+K cups,snacks
+kcups katie,snacks
+Oreos,snacks
+oven roasted turkey lunchmeat,snacks
+peanut butter and chedder crackers,snacks
+poptarts,snacks
+Sesame crackers,snacks
+Snack pb,snacks
+tomato juice,snacks
+wheat thins,snacks
+16 oz choc 60%+,dry
+28 oz whole peeled tomatoes,dry
+Almonds,dry
+beef stock,dry
+bread crumbs,dry
+brown sugar,dry
+bulldog tonKatsu sauce,dry
+canned corn,dry
+canned crushed tomatoes,dry
+cardamon,dry
+chickpeas,dry
+choc chips,dry
+chocolate,dry
+cinn toast crunch,dry
+"coconut milk, so delicious",dry
+corn meal,dry
+Corn starch,dry
+cornstarch,dry
+crackle oat bran,dry
+dark choc hershey kisses,dry
+Evap milk,dry
+french bread,dry
+frosted flakes ,dry
+garam masala,dry
+Gelatin,dry
+granola bars ,dry
+dairy,dry
+fiber maple brown sugar oatmeal,dry
+Jello,dry
+ketchup,dry
+krave,dry
+linguini,dry
+Maple syrup,dry
+McCormick hollandaise,dry
+Medium Salsa,dry
+Msg,dry
+oatmeal cliff bars,dry
+old bay,dry
+panko,dry
+peanuts,dry
+pectin,dry
+Penne pasta,dry
+pesto,dry
+pie,dry
+plain instant oatmeal,dry
+Powdered milk,dry
+powdered sugar,dry
+Ragu,dry
+raspberry extract,dry
+Reese's puffs?,dry
+special k strawberry cereal,dry
+Splenda,dry
+thai noodles,dry
+tortillas,dry
+tuna,dry
+ 1 lb ground turkey,meat
+2 lb ground beef,meat
+BKed lays,soda
+black olives,soda
+diet coke,soda
+dry unsalted peanuts,soda
+ginger ale,soda
+horseradish,soda
+hot sauce,soda
+Ketchup,soda
+oatmeal,soda
+pimentos,soda
+pop chips,soda
+pudding,soda
+ranch dressing,soda
+ranch seasoning,soda
+refried beans,soda
+rice,soda
+rice noodles,soda
+salsa,soda
+sriacha,soda
+sugar,soda
+tortilla chips,soda
+Tostidos,soda
+veg stock,soda
+Wine,soda
+bacon,meat
+Boneless wings,meat
+chicken,meat
+chicken breasts,meat
+Chorizo,meat
+crab,meat
+dijon must,meat
+Good sausages,meat
+ground beef,meat
+Hamburger,meat
+mashed potatoes,meat
+mayo,meat
+miracle whip,meat
+pork butt roast,meat
+salmon,meat
+turkey burger,meat
+benedryl,misc
+bounty paper towels D,misc
+Breathe right,misc
+carpet brush,misc
+Cascade complete,misc
+charmin ultra strong (red) D,misc
+chicken drumsticks,misc
+Containers,misc
+DayQuil,misc
+Downy,misc
+electric razor,misc
+gallon bags,misc
+gasx,misc
+Ground beef,misc
+H2o2,misc
+Kit bags 13 g,misc
+NyQuil,misc
+Pet carpet,misc
+Pom body wash,misc
+protein shakes EAS,misc
+Rinse aid,misc
+Scrubbing brush,misc
+sensodine toothpaste,misc
+Spoons,misc
+Surge protector,misc
+Tide,misc
+tide free and gentle,misc
+Vasoline,misc
+Vitamins,misc
+Bagels,dairy
+bread,dairy
+Buns,dairy
+coffee,dairy
+Coffee filters,dairy
+dawn ultra green apple blossom antibacterial hand soap,dairy
+eng muf ns whole grain,dairy
+Entemanns,dairy
+hot dog buns,dairy
+ital bread,dairy
+Jam,dairy
+jelly,dairy
+naan,dairy
+nutella,dairy
+paper towels,dairy
+potato bread,dairy
+quart freezer bags,dairy
+snack bags,dairy
+softsoap pomegranate,dairy
+wheat bread,dairy
+arnold's mutigrain bread,froz
+chocolate syrup,froz
+froz spinach,froz
+frozen edamame,froz
+frozen peaches,froz
+frozen peas,froz
+frozen veggies,froz
+ice cream,froz
+"Kind Healthy Grains Cinnamon Oat Clusters with Flax Seeds, 11 oz",froz
+lean cuisine,froz
+oatmeal raisin cliff bars,froz
+Pasta Froz meals,froz
+peanut butter,froz
+perogies,froz
+pf chang dinner,froz
+pita,froz
+pizza rolls,froz
+roasting chicken,froz
+salmon,froz
+sausage patties,froz
+Toaster strudel,froz
+waffles,froz
