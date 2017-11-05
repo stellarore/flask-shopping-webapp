@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add item</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Item</td>
+        <td>Number</td>
+        <td>Department</td>
+    </tr>
+<tr>
+    <form action="/addItem" method="post">
+    <td><input type="text" name="item_name"></input></td>
+    <td><input type="text" name="item_number" size="1"></input></td>
+
+    <td><select name="department">
+      <option value="1">Produce</option>
+      <option value="2">Bakery</option>
+      <option value="3">Meat</option>
+      <option value="4">Soda</option>
+      <option value="5">Snacks</option>
+      <option value="6">DryGoods</option>
+      <option value="7">Misc</option>
+      <option value="8">Frozen</option>
+      <option value="9">Dairy</option>
+
+    </select></td>
+    </tr>
+    <tr><td><input type="submit" value="Add Item"></td></tr>
+</form></table>
+</body>
+</html>

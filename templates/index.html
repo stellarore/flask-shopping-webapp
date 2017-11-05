@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grocery List</title>
+  </head>
+
+  <body>
+  <ul>
+  {% for grocery in grocery_list %}
+  <li>{{ grocery[0] }}, {{ grocery[1] }}, {{ grocery[2] }}</li>
+  {% endfor %}
+</ul>
+    <h2><a href="/add">Add an item</a></h2>
+  </body>
+</html>
