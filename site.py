@@ -25,7 +25,6 @@ def index():
         else: bought.append(i)
     # where number > 0
     # separate list where number = 0
-    # clickable to check off
     # separate button to save checkoffs
     return render_template('index.html', grocery_list=to_buy, bought_list=bought)
 
