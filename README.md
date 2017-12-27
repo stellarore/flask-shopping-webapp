@@ -12,7 +12,6 @@ Shopping List webapp made in Flask
 * Import CSV items into the database
     $ python3 groceries_import.py
 
-
 # Usage
 
     $ python3 site.py
