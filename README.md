@@ -5,11 +5,11 @@ Shopping List webapp made in Flask
 * Retains your past items beneath list, so you can re-add them easily
 
 # Setup
-Delete example database grocerylist.db
-Create a CSV file to import a large number of recent items
+* Delete example database grocerylist.db
+* Create a CSV file to import a large number of recent items
     apple,produce
     mozzarella,dairy
-Import CSV items into the database
+* Import CSV items into the database
     $ python3 groceries_import.py
 
 
